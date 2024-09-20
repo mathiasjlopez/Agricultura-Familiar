@@ -145,7 +145,7 @@ Produccion_veg_NAF %>%
 
 ## Guardamos el nuevo dataset
 
-write.csv()
+write.csv(Prod_NAF_FyV_09y13, "C:/Users/Dell/Documents/Agricultura-Familiar/Prod_NAF_FyV_09y13.csv", row.names = FALSE)
 
 ##______________________________________________________________________________
 
