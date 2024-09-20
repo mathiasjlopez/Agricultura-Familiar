@@ -1,44 +1,44 @@
-"nom_provincia","anio","Ha_total_FyV"
-"BUENOS AIRES","2009",499
-"CATAMARCA","2009",734
-"CHACO","2009",394
-"CHUBUT","2009",536
-"CORDOBA","2009",470
-"CORRIENTES","2009",1401
-"ENTRE RIOS","2009",220
-"FORMOSA","2009",1036
-"JUJUY","2009",324
-"LA PAMPA","2009",49
-"LA RIOJA","2009",236
-"MENDOZA","2009",387
-"MISIONES","2009",5340
-"NEUQUEN","2009",186
-"RIO NEGRO","2009",229
-"SALTA","2009",60
-"SAN JUAN","2009",214
-"SAN LUIS","2009",44
-"SANTA FE","2009",520
-"SANTIAGO DEL ESTERO","2009",253
-"TUCUMAN","2009",329
-"BUENOS AIRES","2013",1942
-"CATAMARCA","2013",308
-"CHACO","2013",112
-"CHUBUT","2013",90
-"CORDOBA","2013",216
-"CORRIENTES","2013",677
-"ENTRE RIOS","2013",348
-"FORMOSA","2013",235
-"JUJUY","2013",642
-"LA PAMPA","2013",29
-"LA RIOJA","2013",383
-"MENDOZA","2013",2120
-"MISIONES","2013",932
-"NEUQUEN","2013",117
-"RIO NEGRO","2013",285
-"SALTA","2013",1297
-"SAN JUAN","2013",1177
-"SAN LUIS","2013",11
-"SANTA FE","2013",270
-"SANTIAGO DEL ESTERO","2013",62
-"TIERRA DEL FUEGO","2013",46
-"TUCUMAN","2013",442
+"Provincia","Año_Edicion","Ha_total_FyV"
+"Buenos Aires","2009",499
+"Catamarca","2009",734
+"Chaco","2009",394
+"Chubut","2009",536
+"Córdoba","2009",470
+"Corrientes","2009",1401
+"Entre Ríos","2009",220
+"Formosa","2009",1036
+"Jujuy","2009",324
+"La Pampa","2009",49
+"La Rioja","2009",236
+"Mendoza","2009",387
+"Misiones","2009",5340
+"Neuquén","2009",186
+"Río Negro","2009",229
+"Salta","2009",60
+"San Juan","2009",214
+"San Luis","2009",44
+"Santa Fe","2009",520
+"Santiago del Estero","2009",253
+"Tucumán","2009",329
+"Buenos Aires","2013",1942
+"Catamarca","2013",308
+"Chaco","2013",112
+"Chubut","2013",90
+"Córdoba","2013",216
+"Corrientes","2013",677
+"Entre Ríos","2013",348
+"Formosa","2013",235
+"Jujuy","2013",642
+"La Pampa","2013",29
+"La Rioja","2013",383
+"Mendoza","2013",2120
+"Misiones","2013",932
+"Neuquén","2013",117
+"Río Negro","2013",285
+"Salta","2013",1297
+"San Juan","2013",1177
+"San Luis","2013",11
+"Santa Fe","2013",270
+"Santiago del Estero","2013",62
+"Tierra del Fuego","2013",46
+"Tucumán","2013",442

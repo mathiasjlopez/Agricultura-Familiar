@@ -142,6 +142,34 @@ Produccion_veg_NAF %>%
 # YA CHEQUEADO, DA BIEN EL CODIGO Prod_NAF_FyV_09y13
 
 
+### Recodificacion de algunas variables y cambiando formato de nombres de provincias:
+Prod_NAF_FyV_09y13 <- Prod_NAF_FyV_09y13 %>% 
+  rename( Año_Edicion = anio, Provincia = nom_provincia) 
+
+Prod_NAF_FyV_09y13 <- Prod_NAF_FyV_09y13 %>% 
+  mutate( Provincia = recode(Provincia,
+                             "BUENOS AIRES" = "Buenos Aires",
+                             "CATAMARCA" = "Catamarca" ,
+                             "CHACO" = "Chaco" ,
+                             "CHUBUT" = "Chubut" ,
+                             "CORDOBA" = "Córdoba",
+                             "CORRIENTES" = "Corrientes",
+                             "ENTRE RIOS" = "Entre Ríos" ,
+                             "FORMOSA" = "Formosa" ,
+                             "JUJUY" = "Jujuy" ,
+                             "LA PAMPA" = "La Pampa" ,
+                             "LA RIOJA" = "La Rioja" ,
+                             "MENDOZA" = "Mendoza",
+                             "MISIONES" = "Misiones",
+                             "NEUQUEN" = "Neuquén",
+                             "RIO NEGRO" = "Río Negro",
+                             "SALTA" = "Salta",
+                             "SAN JUAN" = "San Juan",
+                             "SAN LUIS" = "San Luis",
+                             "SANTA FE" = "Santa Fe",
+                             "SANTIAGO DEL ESTERO" = "Santiago del Estero",
+                             "TIERRA DEL FUEGO" = "Tierra del Fuego",
+                             "TUCUMAN" = "Tucumán"))
 
 ## Guardamos el nuevo dataset
 
