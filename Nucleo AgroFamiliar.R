@@ -118,12 +118,19 @@ Produccion_vegetal_BsAs %>%
 Prod_NAF_FyV_09y13 <- Produccion_veg_NAF %>% 
   group_by(nom_provincia, anio) %>% 
   select(cod_provincia, nom_provincia, anio, produccion, cantidad_de_producciones, cod_unid_superficie) %>% 
-  filter(anio %in% c(2009, 2013) & !(produccion %in% c("AVENA", "ARVEJAS", "HUERTA AUTOCONSUMO", "HUERTA MERCADO (5 ESPECIES O MAS)", "SOJA 1RA", "TRIGO PAN", "AJI / PIMIENTO FRESCO", "AROMATICAS", "ALFALFA", "MAIZ", "OTROS CEREALES", "PECAN", "OTROS FORESTALES", "VIVERO - ORNAMENTALES", "SORGO GRANIFERO", "FLORES", "VID DE MESA", "VID VINIFERA", "PERENNES", "OTRAS AROMATICAS", "OTRAS FORRAJERAS PERENNES", "FORRAJERAS ANUALES", "(en blanco)", "PINO", "CASTA\xd1O", "MAIZ PISINGALLO", "SOJA 2DA", "SAUCE", "OTROS VIVEROS", "MEDICINALES", "NOGAL", "PIMIENTO PARA PIMENTON", "POROTO BLANCO", "MIJO", "LUPINO", "TARTAGO", "TABACO", "ARROZ", "AVELLANO", "GIRASOL", "ALPISTE", "CENTENO", "VID PARA PASAS", "POROTO NEGRO", "OTRA", "FORRAJERAS PERENNES", "ORNAMENTALES", "EUCALIPTO", "OTRAS OLEAGINOSAS", "VIVERO - FORESTALES", "COLZA", "OTROS INDUSTRIALES", "                  " ,"CA\xd1A DE AZUCAR", "ALGODON", "CA\xd1AMO", "VIVERO - INDUSTRIALES", "MANI", "QUINOA O QUINUA", "POROTO COLORADO", "YERBA MATE", "GREVILLEA", "CULTIVOS PARA SEMILLAS", "PARAISO", "LINO", "OTROS CULTIVOS ANDINOS", "OTROS CULTIVOS ANDINOS", "ROMERO", "MAICES ANDINOS"))) %>% 
+  filter(anio %in% c(2009, 2013) & !(produccion %in% c("AVENA", "ARVEJAS", "SOJA 1RA", "TRIGO PAN", "AJI / PIMIENTO FRESCO", "AROMATICAS", "ALFALFA", "MAIZ", "OTROS CEREALES", "OTROS FORESTALES", "VIVERO - ORNAMENTALES", "SORGO GRANIFERO", "FLORES", "PERENNES", "OTRAS AROMATICAS", "OTRAS FORRAJERAS PERENNES", "FORRAJERAS ANUALES", "(en blanco)", "PINO", "MAIZ PISINGALLO", "SOJA 2DA", "SAUCE", "OTROS VIVEROS", "MEDICINALES", "PIMIENTO PARA PIMENTON", "POROTO BLANCO", "MIJO", "LUPINO", "TARTAGO", "TABACO", "ARROZ", "AVELLANO", "GIRASOL", "ALPISTE", "CENTENO", "POROTO NEGRO", "OTRA", "FORRAJERAS PERENNES", "ORNAMENTALES", "EUCALIPTO", "OTRAS OLEAGINOSAS", "VIVERO - FORESTALES", "COLZA", "                  " ,"CA\xd1A DE AZUCAR", "ALGODON", "CA\xd1AMO", "VIVERO - INDUSTRIALES", "MANI", "QUINOA O QUINUA", "POROTO COLORADO", "YERBA MATE", "GREVILLEA", "CULTIVOS PARA SEMILLAS", "PARAISO", "LINO", "OTROS CULTIVOS ANDINOS", "OTROS CULTIVOS ANDINOS", "ROMERO", "MAICES ANDINOS"))) %>% 
   summarise(Ha_total_FyV = sum(cantidad_de_producciones), .groups = "drop") %>% 
   arrange(anio, nom_provincia) 
 
+Prod_NAF_FyV_09y13 %>%
+  group_by(anio) %>% 
+  select(anio, Ha_total_FyV) %>% 
+  summarise(Suma_total_FyV_año = sum(Ha_total_FyV))
 
-
+# anio        Suma_total_FyV_año
+#               
+# 2009               13461
+# 2013               11741
 
 # Chequeando la suma de las producciones: Cambiamos la provincia y da los resultados
 Produccion_veg_NAF %>%
